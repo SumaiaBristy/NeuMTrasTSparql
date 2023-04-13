@@ -26,9 +26,9 @@ These two steps are detailed in the following.However, the whole process can be 
 given a template pair in Table 1, where <A> belongs to the class dbo:Monument in DBpedia, one can then retrieve a list of entities and their corresponding
 English labels to replace <A> by executing an assistant SPARQL query on a DBpedia endpoint. An example is shown in Table 2. To be noted, The range of entities in this dataset is restricted to the instances of the specific class dbo:Monument, which is why we call it the Monument dataset.
 
-**1. translation in self machine**
+**1. Translation in self machine**
 
-**2. translation creating virtual Environment using an web interface**
+**2. Translation creating virtual Environment using an web interface**
      
 
      
