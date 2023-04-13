@@ -14,6 +14,10 @@ Course: 5P30 (Graph Data mining)<br>
 My Supervisor: Renata Queiroz Dividino<br>
 
 **Target of this work**
+Natural language question: What is the common area of expertise of Sam Loyd and Eric Schiller? (as represented by their "knownFor" properties in DBpedia?)4
+Correspondig SPARQL : ![image](https://user-images.githubusercontent.com/28555115/231902643-606d4a0e-b4bb-47d7-8e47-edbe76d7deea.png)
+
+
 
 The result of the referrenced paper is partially reproduced here for the CONVS2S model to have a deeper understanding of the work proposed in this paper, discover existing issues and so as to utilize my knowledge in the future, targetting to develop more convenient system for user fixing these issues. At the same time, allowing myself enough time to configure my system to handle this massive project that requires high- configuration experimetal set up, as demostrated in the referenced paper that is not currently available and thus limit myself to test for all the models this time.
 Results can be regenerated in two ways viz that to perform natural lanuage to SPARQL translation, we can follow two steps i.e:  
