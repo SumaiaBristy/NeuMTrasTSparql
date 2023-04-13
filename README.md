@@ -46,6 +46,7 @@ which ended up with perplexity score at maximum of 1.1311% for the monument300 d
 
 
 **2. Translation creating virtual Environment using an web interface**
+
 To translate a natural language question to SPARQL query with an interactive web based interface, one need to follow the following steps:-
 **Installation guide for spacey**
     - pip install -U spacey
@@ -60,7 +61,20 @@ To translate a natural language question to SPARQL query with an interactive web
     - .\.venv\Scripts\activate (windows)
     - .venv/bin/activate (linux)
     - pip install Flask
-    
+**Data preparation**
+
+**To generate the training data, execute the following commands**
+    - mkdir data/monument_300
+    - python generator.py --templates data/annotations_monument.csv  --output data/monument_300
+**Training**
+Now go back to the initial directory and launch train.sh to train the model. The first parameter is the prefix of the data directory and the second parameter is the number of training epochs.The following command will create a model directory called data/monument_300_model and would take nearly 4 hours for 20 epochs.
+   - sh train.sh data/monument_300 20
+
+Inference
+Predict the SPARQL sentence for a given question with a given model. In this, we wil run back.py. After that go to http://localhost:5000/result on any web browser. This has front end. Enter your query and sparql sentence will be generated in next page.
+
+Execution of the application - Run back.py and then go to http://localhost:5000/ .
+   
      
 **Downloads(Google drive)**
 - Monument (https://drive.google.com/drive/folders/1ibgd3pGtQZJ8lPTOCJ7vf6lzz2MxKa-0)
