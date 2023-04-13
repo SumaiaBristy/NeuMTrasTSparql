@@ -28,7 +28,7 @@ English labels to replace <A> by executing an assistant SPARQL query on a DBpedi
 
 **1. translation in self machine**
 
-**1. translation creating virtual Environment**
+**2. translation creating virtual Environment using an web interface**
      
 
      
