@@ -4,14 +4,14 @@ The paper explores the use of SPARQL as a query language for Linked Data resourc
 
 **Referrenced Paper vs My Paper**
 
-Title: Neural Machine Translating from Natural Language to SPARQL
-[^1]Authors: Dr. Dagmar Gromann, Prof. Sebastian Rudolph and Xiaoyu Yin
-[^1]My Name: Sumaia Aktar
-[^1]My Paper: link
-[^1]Institution: Brock University
-[^1]Department: Computer Science
-[^1]Course: 5P30 (Graph Data mining)
-[^1]My Supervisor: Renata Queiroz Dividino
+Title: Neural Machine Translating from Natural Language to SPARQL <br>
+Authors: Dr. Dagmar Gromann, Prof. Sebastian Rudolph and Xiaoyu Yin<br>
+My Name: Sumaia Aktar<br>
+My Paper: link<br>
+Institution: Brock University<br><br>
+Department: Computer Science<br>
+Course: 5P30 (Graph Data mining)<br><br>
+My Supervisor: Renata Queiroz Dividino<br>
 
 **Target of this work**
 
