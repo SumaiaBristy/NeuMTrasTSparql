@@ -17,8 +17,8 @@ supervisor: Renata Queiroz Dividino
 
 The result of the referrenced paper is partially reproduced here for the CONVS2S model to have a deeper understanding of the work proposed in this paper, discover existing issues and so as to utilize my knowledge in the future, targetting to develop more convenient system for user fixing these issues. At the same time, allowing myself enough time to configure my system to handle this massive project that requires high- configuration experimetal set up, as demostrated in the referenced paper that is not currently available and thus limit myself to test for all the models this time.
 Results can be regenerated in two ways viz that to perform natural lanuage to SPARQL translation, we can follow two steps i.e:  
-     1.clone this project and run specific file to see the expected translation.
-     2.clone this project and create a virtual environment to test translation with a web interface.
+     * clone this project and run specific file to see the expected translation.
+     * clone this project and create a virtual environment to test translation with a web interface.
 These two steps are detailed in the following. However, the whole process can be divided into two module i.e dataset generation and training. During dataset generation the placeholder in manually crafted template-query pairs are replaced by corresponding entities and their english labels that is retrieved thorugh execution of an assistant SPARQL query on a DBpedia endpoint. For example,check the follwoing picture.
 ![image](https://user-images.githubusercontent.com/28555115/231785910-16127b33-31a6-4afb-8b37-b6c99b0f0d46.png)
 given a template pair in Table 1, where <A> belongs to the class dbo:Monument in DBpedia, one can then retrieve a list of entities and their corresponding
