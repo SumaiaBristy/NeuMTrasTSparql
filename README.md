@@ -27,6 +27,14 @@ given a template pair in Table 1, where <A> belongs to the class dbo:Monument in
 English labels to replace <A> by executing an assistant SPARQL query on a DBpedia endpoint. An example is shown in Table 2. To be noted, The range of entities in this dataset is restricted to the instances of the specific class dbo:Monument, which is why we call it the Monument dataset.
 
 **1. Translation in self machine**
+For manual dataset generation and training, please follow this file here: https://github.com/SumaiaBristy/NeuMTrasTSparql/blob/main/kmst.py [**kmst.py**] <br> . For each of the method there is documentation along with it regarding how it works so that it would be easier for user to understand how all the module like preprocessing, encoding,decoding, attention mechanism, training, evaluation works and reasons behind writing this way. Aftr going through this file, the first and formeost step is to prepare dataset for training and evaluation. You can check the available following datasets shared by author through their drive in the 'datasets' paragraph here. However, for the convenience of training, I have gathered the available *.en and *.sparql files(those are 1-1 mapped that can be checked from the given drive link here) to one file  named monument.csv that can be retrieved by unzipping this file 'https://github.com/SumaiaBristy/NeuMTrasTSparql/blob/main/monument_300.zip'[monument_300.zip]. However, for the 
+     
+     then you are ready for your first training
+
+  
+     
+     ![image](https://user-images.githubusercontent.com/28555115/231887893-bdbba436-f841-4021-9942-df14703b5df7.png)
+
 
 **2. Translation creating virtual Environment using an web interface**
      
@@ -38,7 +46,7 @@ English labels to replace <A> by executing an assistant SPARQL query on a DBpedi
 - DBNQA (https://drive.google.com/drive/folders/1sSiwVn7aBUezYvM4u226zzq5MqhbaxIw)
      
 **Usages**
-The files ended with *.en (e.g. dev.en, train.en, test.en) contain English sentences, *.sparql files contain SPARQL queries. The ones with the same prefix name have 1-1 mapping that was used in the training as a English-SPARQL pair. vocab.* or dict. are vocabulary files. fairseq has its own special requirement of input files, therefore aforementioned files were not used directly by it but processed into binary formats stored in /fairseq-data-bin folder of each dataset.
+The files ended with *.en (e.g. dev.en, train.en, test.en) contain English sentences, *.sparql files contain SPARQL queries. The ones with the same prefix name have 1-1 mapping that was used in the training as a English-SPARQL pair. vocab.* or dict. are vocabulary files.
 
 **Trained Models**
 Because most of the models were so space-consuming (esp. GNMT4, GNMT8) after training for some sepecific datasets (esp. DBNQA), all the models could not be downloaded  from the HPC server. However, trained models are already shared as requested from author that can be downloaded from here [https://drive.google.com/drive/folders/1VuZrbFl3hgK-qWwGV_zI68qtZWKAKbTv]
