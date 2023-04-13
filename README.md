@@ -8,9 +8,9 @@ Title: Neural Machine Translating from Natural Language to SPARQL <br>
 Authors: Dr. Dagmar Gromann, Prof. Sebastian Rudolph and Xiaoyu Yin<br>
 My Name: Sumaia Aktar<br>
 My Paper: link<br>
-Institution: Brock University<br><br>
+Institution: Brock University<br>
 Department: Computer Science<br>
-Course: 5P30 (Graph Data mining)<br><br>
+Course: 5P30 (Graph Data mining)<br>
 My Supervisor: Renata Queiroz Dividino<br>
 
 **Target of this work**
@@ -29,8 +29,6 @@ English labels to replace <A> by executing an assistant SPARQL query on a DBpedi
 **1. Translation in self machine**
 
 **2. Translation creating virtual Environment using an web interface**
-     
-
      
 **Downloads(Google drive)**
 - Monument (https://drive.google.com/drive/folders/1ibgd3pGtQZJ8lPTOCJ7vf6lzz2MxKa-0)
