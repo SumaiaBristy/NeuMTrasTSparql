@@ -47,6 +47,20 @@ which ended up with perplexity score at maximum of 1.1311% for the monument300 d
 
 
 **2. Translation creating virtual Environment using an web interface**
+To translate a natural language question to SPARQL query with an interactive web based interface, one need to follow the following steps:-
+**Installation guide for spacey**
+    - pip install -U spacey
+    - python -m venv .env
+    - source .env/bin/activate (unix)
+    - surce source path/to/venv/Scripts/activate (windows)
+    - pip install spacey
+**Installation guide for flask**
+    - mkdir myproject
+    - cd myproject
+    - python3 -m venv venv
+    - .\.venv\Scripts\activate (windows)
+    - .venv/bin/activate (linux)
+    - pip install Flask
     
      
 **Downloads(Google drive)**
