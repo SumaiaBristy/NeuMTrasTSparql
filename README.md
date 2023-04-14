@@ -13,7 +13,7 @@ Department: Computer Science<br>
 Course: 5P30 (Graph Data mining)<br>
 My Supervisor: Renata Queiroz Dividino<br>
 
-**Target of this work**
+**Target of this work** <br>
    **Natural language question :** What is the common area of expertise of Sam Loyd and Eric Schiller? (as represented by their "knownFor" properties in DBpedia?)<br>
 
    **Correspondig SPARQL :** ![image](https://user-images.githubusercontent.com/28555115/231902643-606d4a0e-b4bb-47d7-8e47-edbe76d7deea.png) <br>
@@ -24,7 +24,7 @@ Results can be regenerated in two ways viz that to perform natural lanuage to SP
      1. clone this project and run specific file to see the expected translation (self machine/environment)
      2. clone this project and create a virtual environment to test translation with a web interface (vritual environment)
      
-These two steps are detailed in the following.However, the whole process can be divided into two module i.e dataset generation and training. During dataset generation the placeholder in manually crafted template-query pairs are replaced by corresponding entities and their english labels that is retrieved thorugh execution of an assistant SPARQL query on a DBpedia endpoint. For example,check the follwoing picture.
+These two steps are detailed in the following.However, the whole process can be divided into two module i.e dataset generation and training. During dataset generation the placeholder in manually crafted template-query pairs are replaced by corresponding entities and their english labels that is retrieved thorugh execution of an assistant SPARQL query on a DBpedia endpoint. For example,check the following picture.
 ![image](https://user-images.githubusercontent.com/28555115/231785910-16127b33-31a6-4afb-8b37-b6c99b0f0d46.png). 
 
 Given a template pair in Table 1, where <A> belongs to the class dbo:Monument in DBpedia, one can then retrieve a list of entities and their corresponding
@@ -38,7 +38,7 @@ English labels to replace <A> by executing an assistant SPARQL query on a DBpedi
 - torch 1.13.1
  project needs all these libraries to be installed as prerequisites. Aprt from this, in case of any error during the execution of any code blocks regarding installation, just try installing the libraries as suggested under conda environment and it should work!
      
-For manual dataset generation and training, please follow this file here: https://github.com/SumaiaBristy/NeuMTrasTSparql/blob/main/kmst.py [**kmst.py**] <br> . For each of the method there is documentation along with it regarding how it works so that it would be easier for user to understand how all the module like preprocessing, encoding,decoding, attention mechanism, training, evaluation works and reasons behind writing this way. Aftr going through this file, the first and formeost step is to prepare dataset for training and evaluation. You can check the available following datasets shared by author through their drive in the 'datasets' paragraph here. However, for the convenience of training, I have gathered the available *.en and *.sparql files(those are 1-1 mapped that can be checked from the given drive link here) to one file  named monument.csv that can be retrieved by unzipping this file 'https://github.com/SumaiaBristy/NeuMTrasTSparql/blob/main/monument_300.zip'[monument_300.zip]. After that, this csv file will input the templates (english question, SPARQL pairs) as shown above in table:1 to 'generate.py' [https://github.com/SumaiaBristy/NeuMTrasTSparql/blob/main/generator.py] and output will be split to 3 files (train.txt,test.txt and dev.txt) with an updated template pairs containing the English Sentence and corresponding SPARQL where the placeholders are replaced as per the aforemenioned method like this ![image](https://user-images.githubusercontent.com/28555115/231900050-6117ba66-d55e-4db7-acf9-e34d58099351.png)
+For manual dataset generation and training, please follow this file here: https://github.com/SumaiaBristy/NeuMTrasTSparql/blob/main/kmst.py [**kmst.py**]. For each of the method there is documentation along with it regarding how it works so that it would be easier for user to understand how all the module like preprocessing, encoding,decoding, attention mechanism, training, evaluation works and reasons behind writing this way. Aftr going through this file, the first and formeost step is to prepare dataset for training and evaluation. You can check the available following datasets shared by author through their drive in the 'datasets' paragraph here. However, for the convenience of training, I have gathered the available *.en and *.sparql files(those are 1-1 mapped that can be checked from the given drive link here) to one file  named monument.csv that can be retrieved by unzipping this file 'https://github.com/SumaiaBristy/NeuMTrasTSparql/blob/main/monument_300.zip'[monument_300.zip]. After that, this csv file will input the templates (english question, SPARQL pairs) as shown above in table:1 to 'generate.py' [https://github.com/SumaiaBristy/NeuMTrasTSparql/blob/main/generator.py] and output will be split to 3 files (train.txt,test.txt and dev.txt) with an updated template pairs containing the English Sentence and corresponding SPARQL where the placeholders are replaced as per the aforemenioned method like this <br> ![image](https://user-images.githubusercontent.com/28555115/231900050-6117ba66-d55e-4db7-acf9-e34d58099351.png) <br>
 Lastly, you are ready for your first training! for the training and evaluation use this file 'https://github.com/SumaiaBristy/NeuMTrasTSparql/blob/main/encode-decode-train.ipynb' [encode-decode-train.ipynb] that can be run for so many epocs. I ran it for 1000 epocs that output like this 
   ![image](https://user-images.githubusercontent.com/28555115/231887893-bdbba436-f841-4021-9942-df14703b5df7.png)
      
@@ -79,7 +79,9 @@ Predict the SPARQL sentence for a given question with a given model. In this, we
 **Execution of the application**
 - Run back.py and then go to http://localhost:5000/ .
 After implementing all these steps in my machine i have come up with th following results:-
+input:
 ![image](https://user-images.githubusercontent.com/28555115/231916241-e6ff3e59-f258-43af-94f4-a5a6f582af89.png)
+ output: 
 ![image](https://user-images.githubusercontent.com/28555115/231916196-cb442170-72f3-4368-b70c-af1831af941a.png)
 ![image](https://user-images.githubusercontent.com/28555115/231916323-7d18fdba-83e6-42b1-b921-ad8e3fde488a.png)
 ![image](https://user-images.githubusercontent.com/28555115/231916414-b72af6dd-377b-445f-b9ae-82e31570e06b.png)
