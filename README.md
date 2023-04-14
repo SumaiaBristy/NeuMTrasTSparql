@@ -14,7 +14,8 @@ Course: 5P30 (Graph Data mining)<br>
 My Supervisor: Renata Queiroz Dividino<br>
 
 **Target of this work** <br>
-   **Natural language question :** What is the common area of expertise of Sam Loyd and Eric Schiller? (as represented by their "knownFor" properties in DBpedia?)<br>
+  
+  **Natural language question :** What is the common area of expertise of Sam Loyd and Eric Schiller? (as represented by their "knownFor" properties in DBpedia?)<br>
 
    **Correspondig SPARQL :** ![image](https://user-images.githubusercontent.com/28555115/231902643-606d4a0e-b4bb-47d7-8e47-edbe76d7deea.png) <br>
 
