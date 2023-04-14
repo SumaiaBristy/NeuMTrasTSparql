@@ -45,7 +45,7 @@ For manual dataset generation and training, please follow this file here: https:
 Lastly, you are ready for your first training! For the training and evaluation use this file 'https://github.com/SumaiaBristy/NeuMTrasTSparql/blob/main/encode-decode-train.ipynb' [encode-decode-train.ipynb] that can be run for so many epocs with the dataset taken as input after the dataset generation and split as shown above. I ran it for 1000 epocs that output like the following <br>
 ![image](https://user-images.githubusercontent.com/28555115/231887893-bdbba436-f841-4021-9942-df14703b5df7.png) <br>
      
-As it can be seen in the picture, it ended up with perplexity score at maximum of 1.1311% for the monument300 dataset and Seq2Seq model and took approximately 2 hours as myself having a 8GB RAM only!
+As it can be seen in the picture, it ended up with perplexity score at maximum of 1.1311% for the monument300 dataset and Seq2Seq model and took approximately 4 hours as myself having a 8GB RAM only!
 
 
 **2. Translation creating virtual Environment using an web interface**
