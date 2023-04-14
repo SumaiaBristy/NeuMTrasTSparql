@@ -32,8 +32,9 @@ Given a template pair in Table 1, where <A> belongs to the class dbo:Monument in
 English labels to replace <A> by executing an assistant SPARQL query on a DBpedia endpoint. An example is shown in Table 2. To be noted, The range of entities in this dataset is restricted to the instances of the specific class dbo:Monument, which is why we call it the Monument dataset.
 
 **1. Translation in self machine** <br>
-**Experimental set up of my machine**    
-- 4GB RAM
+**Experimental set up of my machine**  
+- CPU @ 2.30GHZ
+- 8GB RAM
 - conda 23.3.1
 - Python 3.9.13
 - torch 1.13.1 <br>
@@ -44,7 +45,7 @@ For manual dataset generation and training, please follow this file here: https:
 Lastly, you are ready for your first training! For the training and evaluation use this file 'https://github.com/SumaiaBristy/NeuMTrasTSparql/blob/main/encode-decode-train.ipynb' [encode-decode-train.ipynb] that can be run for so many epocs with the dataset taken as input after the dataset generation and split as shown above. I ran it for 1000 epocs that output like the following <br>
 ![image](https://user-images.githubusercontent.com/28555115/231887893-bdbba436-f841-4021-9942-df14703b5df7.png) <br>
      
-As it can be seen in the picture, it ended up with perplexity score at maximum of 1.1311% for the monument300 dataset and Seq2Seq model and took approximately 2 hours as myself having a 4GB RAM only!
+As it can be seen in the picture, it ended up with perplexity score at maximum of 1.1311% for the monument300 dataset and Seq2Seq model and took approximately 2 hours as myself having a 8GB RAM only!
 
 
 **2. Translation creating virtual Environment using an web interface**
