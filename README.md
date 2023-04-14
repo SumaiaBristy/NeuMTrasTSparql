@@ -47,36 +47,44 @@ which ended up with perplexity score at maximum of 1.1311% for the monument300 d
 
 **2. Translation creating virtual Environment using an web interface**
 
-To translate a natural language question to SPARQL query with an interactive web based interface, one need to follow the following steps:-
+To translate a natural language question to SPARQL query with an interactive web based interface, one need to follow the following steps:-<br>
+  
 **Installation guide for spacey**
-    - pip install -U spacey
-    - python -m venv .env
-    - source .env/bin/activate (unix)
-    - surce source path/to/venv/Scripts/activate (windows)
-    - pip install spacey
-**Installation guide for flask**
-    - mkdir myproject
-    - cd myproject
-    - python3 -m venv venv
-    - .\.venv\Scripts\activate (windows)
-    - .venv/bin/activate (linux)
-    - pip install Flask
-**Data preparation**
+- pip install -U spacey 
+- python -m venv .env
+- source .env/bin/activate (linux)
+- .\venv\Scripts\activate (windows)
+- pip install spacey
+  
+**Installation guide for flask** <br>
+- mkdir myproject
+- cd myproject
+- python3 -m venv venv
+- .\venv\Scripts\activate (windows)
+- source .env/bin/activate (linux)
+- pip install Flask
+  
+**Data preparation**<br>
+To generate the training data, execute the following commands
+- mkdir data/monument_300
+- python generator.py --templates data/annotations_monument.csv  --output data/monument_300
 
-**To generate the training data, execute the following commands**
-    - mkdir data/monument_300
-    - python generator.py --templates data/annotations_monument.csv  --output data/monument_300
 **Training**
 Now go back to the initial directory and launch train.sh to train the model. The first parameter is the prefix of the data directory and the second parameter is the number of training epochs.The following command will create a model directory called data/monument_300_model and would take nearly 4 hours for 20 epochs.
-   - sh train.sh data/monument_300 20
+- sh train.sh data/monument_300 20
 
-Inference
+**Inference**
 Predict the SPARQL sentence for a given question with a given model. In this, we wil run back.py. After that go to http://localhost:5000/result on any web browser. This has front end. Enter your query and sparql sentence will be generated in next page.
 
-Execution of the application - Run back.py and then go to http://localhost:5000/ .
-   
-     
-**Downloads(Google drive)**
+**Execution of the application**
+- Run back.py and then go to http://localhost:5000/ .
+After implementing all these steps in my machine i have come up with th following results:-
+![image](https://user-images.githubusercontent.com/28555115/231916241-e6ff3e59-f258-43af-94f4-a5a6f582af89.png)
+![image](https://user-images.githubusercontent.com/28555115/231916196-cb442170-72f3-4368-b70c-af1831af941a.png)
+![image](https://user-images.githubusercontent.com/28555115/231916323-7d18fdba-83e6-42b1-b921-ad8e3fde488a.png)
+![image](https://user-images.githubusercontent.com/28555115/231916414-b72af6dd-377b-445f-b9ae-82e31570e06b.png)
+  
+**Datasets(Google drive)**
 - Monument (https://drive.google.com/drive/folders/1ibgd3pGtQZJ8lPTOCJ7vf6lzz2MxKa-0)
 - Monument80 (https://drive.google.com/drive/folders/18QF3avTHU8rD9C-hWAnD56QlP4yxhKDy)
 - Monument50(https://drive.google.com/drive/folders/1C-vFYKpEvxCN06bjUvrqZBUb7hXeM145)
@@ -90,4 +98,4 @@ The files ended with *.en (e.g. dev.en, train.en, test.en) contain English sente
 Because most of the models were so space-consuming (esp. GNMT4, GNMT8) after training for some sepecific datasets (esp. DBNQA), all the models could not be downloaded  from the HPC server. However, trained models are already shared as requested from author that can be downloaded from here [https://drive.google.com/drive/folders/1VuZrbFl3hgK-qWwGV_zI68qtZWKAKbTv]
      
 **One More Thing**
-This regeneration of work has been really helpful for me specially having a deeper understanding of the 
+This regeneration of work has been really helpful for me having a deeper understanding of the neural models and all the three architectures as mentioned in the paper. I had to face challenges regarding machine configuration and differnet package installation that in turn helped to find out so many things and hence enrich my knowledge that migh surely help me to research more in the related filed. Special thanks to my course supervisor Renata Queiroz Dividino. I found her so cordial and cooperative always that motivated me to give my best to work on this project. 
