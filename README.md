@@ -32,7 +32,7 @@ Given a template pair in Table 1, where <A> belongs to the class dbo:Monument in
 English labels to replace <A> by executing an assistant SPARQL query on a DBpedia endpoint. An example is shown in Table 2. To be noted, The range of entities in this dataset is restricted to the instances of the specific class dbo:Monument, which is why we call it the Monument dataset.
 
 **1. Translation in self machine** <br>
-**1.1 Experimental set up of my machine **    
+**Experimental set up of my machine**    
 - 4GB RAM
 - conda 23.3.1
 - Python 3.9.13
@@ -78,14 +78,14 @@ Now go back to the initial directory and launch train.sh to train the model. The
 Predict the SPARQL sentence for a given question with a given model. In this, we wil run back.py. After that go to http://localhost:5000/result on any web browser. This has front end. Enter your query and sparql sentence will be generated in next page.
 
 **Execution of the application**
-- Run back.py and then go to http://localhost:5000/ .
-After implementing all these steps in my machine i have come up with th following results:-
-input:
-![image](https://user-images.githubusercontent.com/28555115/231916241-e6ff3e59-f258-43af-94f4-a5a6f582af89.png)
- output: 
-![image](https://user-images.githubusercontent.com/28555115/231916196-cb442170-72f3-4368-b70c-af1831af941a.png)
-![image](https://user-images.githubusercontent.com/28555115/231916323-7d18fdba-83e6-42b1-b921-ad8e3fde488a.png)
-![image](https://user-images.githubusercontent.com/28555115/231916414-b72af6dd-377b-445f-b9ae-82e31570e06b.png)
+- Run back.py and then go to http://localhost:5000/ . <br>
+After implementing all these steps in my machine i have come up with th following results:- <br>
+input: <br>
+![image](https://user-images.githubusercontent.com/28555115/231916241-e6ff3e59-f258-43af-94f4-a5a6f582af89.png)<br>
+ output:  <br>
+![image](https://user-images.githubusercontent.com/28555115/231916196-cb442170-72f3-4368-b70c-af1831af941a.png)<br>
+![image](https://user-images.githubusercontent.com/28555115/231916323-7d18fdba-83e6-42b1-b921-ad8e3fde488a.png)<br>
+![image](https://user-images.githubusercontent.com/28555115/231916414-b72af6dd-377b-445f-b9ae-82e31570e06b.png)<br>
   
 **Datasets(Google drive)**
 - Monument (https://drive.google.com/drive/folders/1ibgd3pGtQZJ8lPTOCJ7vf6lzz2MxKa-0)
